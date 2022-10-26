@@ -37,11 +37,8 @@ for(let m=0;m<g_zero.length;m++){
    for(let n=m+1;n<g_zero.length;n++){  
      const count=(g_zero[m]+g_zero[n] )*-1;   
      if(l_zero.includes(count)){
-       output.push([count,g_zero[m],g_zero[n]])
-       
-      
-      }
-      
+       output.push([count,g_zero[m],g_zero[n]])   
+      }    
    }
 }
 const result=output.sort((a,b)=> { return a[0]-b[0]})
